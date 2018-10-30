@@ -1,10 +1,17 @@
 # Install-DeepLearning-GPU-R
-Brief guide to install all the nvidia and R requierements to use Keras under GPU in R lenguage
 
-### 1st step: 
+This tutorial to get tensorflow-gpu working in R was realized in Ubuntu 18.04 LTS
+
+### 1st step: Check NVIDIA driver version
+
+Check your graphic card and the nvidia driver version installed in your computer
+
+_$ nvidia-smi_
+
+
 
 ### 2nd step:
 
-### 3rd
+### 3rd step
 
 ### References
