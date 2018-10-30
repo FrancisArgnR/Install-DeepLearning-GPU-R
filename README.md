@@ -40,9 +40,9 @@ _$ nvcc --version_
 
 And the cuda installation:
 
-_$ cd /usr/local/cuda-9.0/samples/1_Utilities/deviceQuery_
-_$ sudo make_
-_$ ./deviceQuery_
+_$ cd /usr/local/cuda-9.0/samples/1_Utilities/deviceQuery_ <br>
+_$ sudo make_ <br>
+_$ ./deviceQuery_ <br>
 
 
 ### 3rd step: Install CUDNN
