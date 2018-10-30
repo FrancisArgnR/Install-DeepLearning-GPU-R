@@ -76,6 +76,13 @@ And finally, install the nvidia cuda Profile Tools:
 
 _$ sudo apt-get install libcupti-dev_
 
+Check the cudnn installation:
+
+_$ cd /usr/src/cudnn_samples_v7/_ <br>
+_$ cd cudnn_samples_v7/mnistCUDNN_ <br>
+_$ make clean && make_ <br>
+_$ sudo ./mnistCUDNN_ <br> 
+
 
 
 ### 4th step: Cuda path
