@@ -65,5 +65,16 @@ Give read access to all users:
 _$ sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudnn*_ <br>
 _$ sudo chmod a+r /usr/local/cuda/include/cudnn.h_ <br>
 
+Next, install in this order:
+
+_$ sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb_ <br>
+_$ sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb_ <br>
+_$ sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb_ <br>
+
+And finally, install the nvidia cuda Profile Tools:
+
+_$ sudo apt-get install libcupti-dev_
+
+
 
 ### References
