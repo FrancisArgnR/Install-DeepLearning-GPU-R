@@ -81,4 +81,22 @@ It's important to modify the .profile if you will use RStudio, otherwise the .ba
 
 
 
+### 5th step: Install Keras and TensorFlow in R
+
+Install keras from github repository (in R console):
+
+_devtools::install_github("rstudio/keras")_
+
+Install tensorflow in gpu (in R console):
+
+_keras::install_keras(tensorflow = "gpu")_
+
+
+
 ### References
+
+https://tensorflow.rstudio.com/tools/local_gpu.html <br>
+https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138 <br>
+https://medium.com/codezillas/step-by-step-guide-to-install-tensorflow-gpu-on-ubuntu-18-04-lts-6feceb0df5c0 <br>
+https://sndean.github.io/blog/2018/03/10/setting-up-keras-for-r-configured-to-run-on-gpus/ <br>
+https://medium.com/intro-to-artificial-intelligence/install-tensorflow-gpu-on-ubuntu18-04-ff311a8bd4d6 <br>
