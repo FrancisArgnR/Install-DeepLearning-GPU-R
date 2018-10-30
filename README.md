@@ -15,8 +15,8 @@ If you don't have the nvidia driver, you can download the required driver for yo
 ### 2nd step: Install the CUDA Toolkit
 
 You can download the Cuda Toolkit from:
-https://developer.nvidia.com/cuda-90-download-archive? (Cuda 9 recommended)
-https://developer.nvidia.com/cuda-downloads (Cuda 10)
+https://developer.nvidia.com/cuda-90-download-archive? (Cuda 9 recommended) <br>
+https://developer.nvidia.com/cuda-downloads (Cuda 10) <br>
 
 I recommended Cuda 9 because TensorFlow don't support 10 version: https://www.tensorflow.org/install/source#tested_build_configurations
 
