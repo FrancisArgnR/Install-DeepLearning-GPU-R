@@ -40,11 +40,7 @@ _$ nvcc --version_
 
 
 
-### 3rd step: Cuda path
-
-
-
-### 4th step: Install CUDNN
+### 3rd step: Install CUDNN
 
 You can download the cuda deep neural network library from here (nvidia login requested): https://developer.nvidia.com/cudnn
 
@@ -74,6 +70,14 @@ _$ sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb_ <br>
 And finally, install the nvidia cuda Profile Tools:
 
 _$ sudo apt-get install libcupti-dev_
+
+
+
+### 4th step: Cuda path
+
+To ensure that Tensorflow can find your CUDA installation and use it properly, you need to add the path to the CUDA binaries to your PATH and LD_LIBRARY_PATH _(for more information see the references)_.
+
+It's important to modify the .profile if you will use RStudio, otherwise the .bashrc file.
 
 
 
