@@ -34,10 +34,15 @@ Now, you can check the Cuda version (normally in /usr/local/cuda):
 
 _$ cat /usr/local/cuda/version.txt_
 
-And the nvcc compiler:
+Check the nvcc compiler:
 
 _$ nvcc --version_
 
+And the cuda installation:
+
+_$ cd /usr/local/cuda-9.0/samples/1_Utilities/deviceQuery_
+_$ sudo make_
+_$ ./deviceQuery_
 
 
 ### 3rd step: Install CUDNN
