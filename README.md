@@ -4,15 +4,21 @@ This tutorial to get tensorflow-gpu working in R was realized in Ubuntu 18.04 LT
 
 ### 1st step: Check NVIDIA driver version
 
+Check if your graphic card is Cuda-GPU enabled: https://developer.nvidia.com/cuda-gpus
+
 Check your graphic card and the nvidia driver version installed in your computer
 
 _$ nvidia-smi_
 
-If your graphic card is Cuda-GPU enabled should be here: https://developer.nvidia.com/cuda-gpus
+If you don't have the nvidia driver, you can download the required driver for your graphic card from here: https://www.nvidia.com/Download/index.aspx?lang=en-us
 
-You can check and download the required driver for your graphic card from here: https://www.nvidia.com/Download/index.aspx?lang=en-us
+### 2nd step: Install the CUDA Toolkit
 
-### 2nd step:
+You can download the Cuda Toolkit from:
+https://developer.nvidia.com/cuda-90-download-archive? (Cuda 9 recommended)
+https://developer.nvidia.com/cuda-downloads (Cuda 10)
+
+I recommended Cuda 9 because TensorFlow don't support 10 version: https://www.tensorflow.org/install/source#tested_build_configurations
 
 ### 3rd step
 
