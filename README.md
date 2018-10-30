@@ -12,6 +12,7 @@ _$ nvidia-smi_
 
 If you don't have the nvidia driver, you can download the required driver for your graphic card from here: https://www.nvidia.com/Download/index.aspx?lang=en-us
 
+
 ### 2nd step: Install the CUDA Toolkit
 
 You can download the Cuda Toolkit from:
@@ -23,11 +24,29 @@ I recommended Cuda 9 because TensorFlow don't support 10 version: https://www.te
 
 Once you download it, it is important to follow the installation instructions provided in the web (to install also the keys)
 
-_$ sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb_
-_$ sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub_
-_$ sudo apt-get update_
-_$ sudo apt-get install cuda_  
+_$ sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb_ <br>
+_$ sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub_ <br>
+_$ sudo apt-get update_ <br>
+_$ sudo apt-get install cuda_ <br>  
 
-### 3rd step
+Now, you can check the Cuda version (normally in /usr/local/cuda):
+
+_$ cat /usr/local/cuda/version.txt_
+
+And the nvcc compiler:
+
+_$ nvcc --version_
+
+
+### 3rd step: Cuda path
+
+
+### 4th step: Install CUDNN
+
+You can download the cuda deep neural network library from here (nvidia login requested): https://developer.nvidia.com/cudnn
+
+You should download the package for the previous installed cuda version.
+
+
 
 ### References
