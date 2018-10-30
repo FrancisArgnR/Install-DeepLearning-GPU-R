@@ -93,12 +93,12 @@ _keras::install_keras(tensorflow = "gpu")_
 
 Example for verifying correct operation:
 
-_library(keras)
-library(tensorflow)
+_library(keras) <br>
+library(tensorflow) <br>
 
-sess = tf$Session()
-hello <- tf$constant('Hello, TensorFlow!')
-sess$run(hello)
+sess = tf$Session() <br>
+hello <- tf$constant('Hello, TensorFlow!') <br>
+sess$run(hello) <br>
 _
 
 
