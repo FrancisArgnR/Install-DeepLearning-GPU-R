@@ -91,6 +91,15 @@ Install tensorflow in gpu (in R console):
 
 _keras::install_keras(tensorflow = "gpu")_
 
+Example for verifying correct operation:
+
+_library(keras)
+library(tensorflow)
+
+sess = tf$Session()
+hello <- tf$constant('Hello, TensorFlow!')
+sess$run(hello)
+_
 
 
 ### References
