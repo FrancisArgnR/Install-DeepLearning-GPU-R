@@ -13,6 +13,7 @@ _$ nvidia-smi_
 If you don't have the nvidia driver, you can download the required driver for your graphic card from here: https://www.nvidia.com/Download/index.aspx?lang=en-us
 
 
+
 ### 2nd step: Install the CUDA Toolkit
 
 You can download the Cuda Toolkit from:
@@ -38,15 +39,31 @@ And the nvcc compiler:
 _$ nvcc --version_
 
 
+
 ### 3rd step: Cuda path
+
 
 
 ### 4th step: Install CUDNN
 
 You can download the cuda deep neural network library from here (nvidia login requested): https://developer.nvidia.com/cudnn
 
-You should download the package for the previous installed cuda version.
+You should select the download for the previous installed cuda version and download:
 
+cuDNN v7.x.x Library for Linux <br>
+cuDNN v7.x.x Runtime Library for Ubuntuxx.xx (Deb) <br>
+cuDNN v7.x.x Developer Library for Ubuntuxx.xx (Deb) <br>
+cuDNN v7.x.x Code Samples and User Guide for Ubuntuxx.xx (Deb) <br>
+
+Once downloaded, unpack the first archive and copy the following files to local cuda distribution:
+
+_$ sudo cp cuda/include/cudnn.h /usr/local/cuda/include_ <br>
+_$ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64_ <br>
+
+Give read access to all users:
+
+_$ sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudnn*_ <br>
+_$ sudo chmod a+r /usr/local/cuda/include/cudnn.h_ <br>
 
 
 ### References
