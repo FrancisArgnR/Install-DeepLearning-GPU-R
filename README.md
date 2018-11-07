@@ -114,6 +114,20 @@ _sess$run(hello)_ <br>
 
 
 
+
+### Extra: Select GPU in R
+
+By default, R selects GPU0 to compute and allocates the memory in all GPUs availables (GPU0, GPU1, ...). For use only one specific GPU and not the others, we have to change the devices visibles in cuda: 
+
+_Sys.setenv(CUDA_VISIBLE_DEVICES = "0")_ <br>
+
+In this way, the others GPU devices will be availables for new executions at the same time. De otra manera, si quieres calcular usando todas las GPUs, también es posible:
+
+https://keras.rstudio.com/articles/faq.html#how-can-i-run-a-keras-model-on-multiple-gpus <br>
+https://keras.rstudio.com/reference/multi_gpu_model.html <br>
+
+
+
 ### References
 
 https://tensorflow.rstudio.com/tools/local_gpu.html <br>
