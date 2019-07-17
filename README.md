@@ -91,11 +91,11 @@ To ensure that Tensorflow can find your CUDA installation and use it properly, y
 
 It's important to modify the .profile if you will use RStudio, otherwise the .bashrc file.
 
-Example; In .profile or in .bashrc add:
-  export CUDA_HOME=/usr/local/cuda/ <br>
-  export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${CUDA_HOME}/lib64 <br>
-  PATH=${CUDA_HOME}/bin:${PATH} <br>
-  export PATH <br>
+Example; In .profile or in .bashrc add: <br>
+      _export CUDA_HOME=/usr/local/cuda/_ <br>
+      _export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${CUDA_HOME}/lib64_ <br>
+      _PATH=${CUDA_HOME}/bin:${PATH}_ <br>
+      _export PATH_ <br>
 
 
 
