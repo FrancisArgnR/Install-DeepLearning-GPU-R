@@ -134,6 +134,31 @@ https://keras.rstudio.com/reference/multi_gpu_model.html <br>
 
 
 
+
+### Possible failures
+
+One possible failure is that there is no virtual environment on your system where you can run python. To solve this problem, a conda or virtualenv environment must be installed on your computer, or you can also install it together with tensorflow. It may also be necessary to add the location of the virtual environment to the $PATH variable. You can check that everything is correct from the R console:
+
+To check that the tensorflow module is loaded correctly: 
+
+_reticulate::py_module_available("tensorflow")_ 
+
+Information about the python version:
+
+_reticulate::py_config()_
+
+Information about the conda environment:
+
+_reticulate::conda_list()_
+
+Information about the modules:
+
+_reticulate::py_discover_config("keras")_
+_reticulate::py_discover_config("tensorflow")_
+
+...
+
+
 ### References
 
 https://tensorflow.rstudio.com/tools/local_gpu.html <br>
@@ -141,3 +166,10 @@ https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a
 https://medium.com/codezillas/step-by-step-guide-to-install-tensorflow-gpu-on-ubuntu-18-04-lts-6feceb0df5c0 <br>
 https://sndean.github.io/blog/2018/03/10/setting-up-keras-for-r-configured-to-run-on-gpus/ <br>
 https://medium.com/intro-to-artificial-intelligence/install-tensorflow-gpu-on-ubuntu18-04-ff311a8bd4d6 <br>
+
+https://tensorflow.rstudio.com/tensorflow/articles/installation.html <br>
+https://github.com/rstudio/reticulate <br>
+
+https://cran.r-project.org/web/packages/tensorflow/tensorflow.pdf <br>
+https://cran.r-project.org/web/packages/keras/keras.pdf <br>
+https://cran.r-project.org/web/packages/reticulate/reticulate.pdf <br>
